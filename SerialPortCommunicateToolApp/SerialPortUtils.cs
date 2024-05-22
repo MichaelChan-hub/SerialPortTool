@@ -50,7 +50,7 @@ namespace Communication
                 //打开串口
                 serialPort.Open();
                 //串口数据接收事件实现
-                serialPort.DataReceived += new SerialDataReceivedEventHandler(ReceiveData);
+                //serialPort.DataReceived += new SerialDataReceivedEventHandler(ReceiveData);
                 return serialPort;
             }
             catch
@@ -68,18 +68,6 @@ namespace Communication
                 serialPort.Close();   
         }
 
-        public static void ReceiveData(object sender, SerialDataReceivedEventArgs e)
-        {
-            SerialPort serialPort = (SerialPort)sender;
-
-            int bytesToRead = serialPort.BytesToRead;
-            char[] receiveData = new char[bytesToRead];
-
-            serialPort.Read(receiveData, 0, bytesToRead);
-
-            //向控制台打印数据
-            Debug.WriteLine("收到数据：" + receiveData);
-        }
 
         public static bool SendData(string data)
         {

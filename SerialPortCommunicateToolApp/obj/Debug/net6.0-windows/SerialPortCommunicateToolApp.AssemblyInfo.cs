@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SerialPortCommunicateToolApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e99815a974ea44a679b58ef4285a7071c706a15")]
 [assembly: System.Reflection.AssemblyProductAttribute("SerialPortCommunicateToolApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SerialPortCommunicateToolApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -77,7 +77,7 @@ namespace SerialPortCommunicateToolApp
             combox_Parity.ValueMember = "value";
             combox_Parity.DisplayMember = "key";
 
-            txtBox_BaudRate.Text = "115200";/*默认波特率:115200*/
+            txtBox_BaudRate.Text = "9600";/*默认波特率:115200*/
             combox_StopBits.Text = "1";/*默认停止位:1*/
             txtBox_DataBits.Text = "8";/*默认数据位:8*/
             #endregion
@@ -115,9 +115,14 @@ namespace SerialPortCommunicateToolApp
             byte[] receiveData = new byte[bytesToRead];
             serialPort.Read(receiveData, 0, bytesToRead);
 
-            string str = Convert.ToBase64String(receiveData);
-            Debug.WriteLine(str);
-            this.textBox_Recieve.AppendText(str);
+            string str = BitConverter.ToString(receiveData);
+            
+            this.Invoke(() =>
+            {
+                string dateTime = DateTime.Now.ToString();
+                this.textBox_Recieve.AppendText("[" + dateTime +"]:"+str+ "\r\n");
+            });
+            
         }
 
         private void clearBtn_Click(object sender, EventArgs e)

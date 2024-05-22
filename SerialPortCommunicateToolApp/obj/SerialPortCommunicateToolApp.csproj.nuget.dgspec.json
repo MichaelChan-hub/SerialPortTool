@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\29070\\source\\repos\\SerialPortCommunicationApp\\SerialPortCommunicateToolApp\\SerialPortCommunicateToolApp.csproj": {}
+    "C:\\Users\\29070\\source\\repos\\SerialPortCommunicationApp\\SerialPortTool\\SerialPortCommunicateToolApp\\SerialPortCommunicateToolApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\29070\\source\\repos\\SerialPortCommunicationApp\\SerialPortCommunicateToolApp\\SerialPortCommunicateToolApp.csproj": {
+    "C:\\Users\\29070\\source\\repos\\SerialPortCommunicationApp\\SerialPortTool\\SerialPortCommunicateToolApp\\SerialPortCommunicateToolApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\29070\\source\\repos\\SerialPortCommunicationApp\\SerialPortCommunicateToolApp\\SerialPortCommunicateToolApp.csproj",
+        "projectUniqueName": "C:\\Users\\29070\\source\\repos\\SerialPortCommunicationApp\\SerialPortTool\\SerialPortCommunicateToolApp\\SerialPortCommunicateToolApp.csproj",
         "projectName": "SerialPortCommunicateToolApp",
-        "projectPath": "C:\\Users\\29070\\source\\repos\\SerialPortCommunicationApp\\SerialPortCommunicateToolApp\\SerialPortCommunicateToolApp.csproj",
+        "projectPath": "C:\\Users\\29070\\source\\repos\\SerialPortCommunicationApp\\SerialPortTool\\SerialPortCommunicateToolApp\\SerialPortCommunicateToolApp.csproj",
         "packagesPath": "C:\\Users\\29070\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\29070\\source\\repos\\SerialPortCommunicationApp\\SerialPortCommunicateToolApp\\obj\\",
+        "outputPath": "C:\\Users\\29070\\source\\repos\\SerialPortCommunicationApp\\SerialPortTool\\SerialPortCommunicateToolApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\29070\\AppData\\Roaming\\NuGet\\NuGet.Config",

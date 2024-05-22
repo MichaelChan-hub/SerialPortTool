@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "18C8VzVvGrVkddJEl25TjlZk1lu13I53vtp5kbt2Z+jGIL3NWmbV1d0dvMDtohNUWnS93ihh6zOwrwnkAFhxwA==",
+  "dgSpecHash": "K0KkuvOESIBh1mG8N6DDUnMpF/nktY8fxLFeca9+WZachaOgEYdBnPicPXVYF4YIqzXvZ8nWb2jExh22kYCwSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\29070\\source\\repos\\SerialPortCommunicationApp\\SerialPortCommunicateToolApp\\SerialPortCommunicateToolApp.csproj",
+  "projectFilePath": "C:\\Users\\29070\\source\\repos\\SerialPortCommunicationApp\\SerialPortTool\\SerialPortCommunicateToolApp\\SerialPortCommunicateToolApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\29070\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\29070\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

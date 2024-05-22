@@ -46,22 +46,25 @@
             clearBtn = new Sunny.UI.UIButton();
             sendBtn = new Sunny.UI.UIButton();
             textBox_Send = new Sunny.UI.UITextBox();
+            uiGroupBox3 = new Sunny.UI.UIGroupBox();
             uiGroupBox1.SuspendLayout();
             uiGroupBox2.SuspendLayout();
+            uiGroupBox3.SuspendLayout();
             SuspendLayout();
             // 
             // textBox_Recieve
             // 
             textBox_Recieve.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox_Recieve.Location = new Point(240, 8);
+            textBox_Recieve.Location = new Point(4, 37);
             textBox_Recieve.Margin = new Padding(4, 5, 4, 5);
             textBox_Recieve.MinimumSize = new Size(1, 16);
+            textBox_Recieve.Multiline = true;
             textBox_Recieve.Name = "textBox_Recieve";
             textBox_Recieve.Padding = new Padding(5);
+            textBox_Recieve.ReadOnly = true;
             textBox_Recieve.ShowText = false;
-            textBox_Recieve.Size = new Size(576, 241);
+            textBox_Recieve.Size = new Size(564, 206);
             textBox_Recieve.TabIndex = 2;
-            textBox_Recieve.Text = "uiTextBox1";
             textBox_Recieve.TextAlignment = ContentAlignment.TopLeft;
             textBox_Recieve.Watermark = "";
             // 
@@ -164,7 +167,6 @@
             resetBtn.Size = new Size(125, 44);
             resetBtn.TabIndex = 11;
             resetBtn.Text = "重置";
-            resetBtn.TipsFont = new Font("宋体", 9F, FontStyle.Regular, GraphicsUnit.Point);
             // 
             // openBtn
             // 
@@ -175,6 +177,7 @@
             openBtn.Size = new Size(125, 44);
             openBtn.TabIndex = 10;
             openBtn.Text = "打开串口";
+            openBtn.TipsFont = new Font("宋体", 9F, FontStyle.Regular, GraphicsUnit.Point);
             openBtn.Click += openBtn_Click;
             // 
             // uiLabel5
@@ -270,25 +273,23 @@
             // clearBtn
             // 
             clearBtn.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            clearBtn.Location = new Point(474, 128);
+            clearBtn.Location = new Point(474, 136);
             clearBtn.MinimumSize = new Size(1, 1);
             clearBtn.Name = "clearBtn";
             clearBtn.Size = new Size(95, 44);
             clearBtn.TabIndex = 12;
             clearBtn.Text = "清除消息";
-            clearBtn.TipsFont = new Font("宋体", 9F, FontStyle.Regular, GraphicsUnit.Point);
             clearBtn.Click += clearBtn_Click;
             // 
             // sendBtn
             // 
             sendBtn.Font = new Font("宋体", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            sendBtn.Location = new Point(474, 58);
+            sendBtn.Location = new Point(474, 86);
             sendBtn.MinimumSize = new Size(1, 1);
             sendBtn.Name = "sendBtn";
             sendBtn.Size = new Size(95, 44);
             sendBtn.TabIndex = 11;
             sendBtn.Text = "发送";
-            sendBtn.TipsFont = new Font("宋体", 9F, FontStyle.Regular, GraphicsUnit.Point);
             sendBtn.Click += sendBtn_Click;
             // 
             // textBox_Send
@@ -297,14 +298,29 @@
             textBox_Send.Location = new Point(4, 37);
             textBox_Send.Margin = new Padding(4, 5, 4, 5);
             textBox_Send.MinimumSize = new Size(1, 16);
+            textBox_Send.Multiline = true;
             textBox_Send.Name = "textBox_Send";
             textBox_Send.Padding = new Padding(5);
             textBox_Send.ShowText = false;
             textBox_Send.Size = new Size(463, 143);
             textBox_Send.TabIndex = 0;
-            textBox_Send.Text = "uiTextBox2";
             textBox_Send.TextAlignment = ContentAlignment.TopLeft;
             textBox_Send.Watermark = "";
+            // 
+            // uiGroupBox3
+            // 
+            uiGroupBox3.Controls.Add(textBox_Recieve);
+            uiGroupBox3.FillColorGradient = true;
+            uiGroupBox3.Font = new Font("宋体", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            uiGroupBox3.Location = new Point(244, 1);
+            uiGroupBox3.Margin = new Padding(4, 5, 4, 5);
+            uiGroupBox3.MinimumSize = new Size(1, 1);
+            uiGroupBox3.Name = "uiGroupBox3";
+            uiGroupBox3.Padding = new Padding(0, 32, 0, 0);
+            uiGroupBox3.Size = new Size(576, 256);
+            uiGroupBox3.TabIndex = 6;
+            uiGroupBox3.Text = "接收";
+            uiGroupBox3.TextAlignment = ContentAlignment.TopLeft;
             // 
             // MainForm
             // 
@@ -312,13 +328,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(825, 459);
             Controls.Add(uiGroupBox2);
+            Controls.Add(uiGroupBox3);
             Controls.Add(uiGroupBox1);
-            Controls.Add(textBox_Recieve);
             Name = "MainForm";
             Text = "串口通讯助手";
             Load += MainForm_Load;
             uiGroupBox1.ResumeLayout(false);
             uiGroupBox2.ResumeLayout(false);
+            uiGroupBox3.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -341,5 +358,6 @@
         private Sunny.UI.UITextBox txtBox_BaudRate;
         private Sunny.UI.UIComboBox combox_Parity;
         private Sunny.UI.UIComboBox combox_StopBits;
+        private Sunny.UI.UIGroupBox uiGroupBox3;
     }
 }
